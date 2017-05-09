@@ -1,0 +1,141 @@
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// This code is licensed under the MIT License (MIT).
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+/* general styles */
+
+body {
+  background: #000000;
+  color: #000000;
+}
+
+html, body, .container-fluid, .row-fluid {
+  height: 96%;
+}
+
+/* Boostrap overrides */
+
+.form-control {
+  width: 15%;
+  min-width: 150px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.col-xs-3 {
+  padding: 0;
+}
+
+.container-fluid {
+  min-width: 305px;
+  min-height: 305px;
+}
+
+
+/* game setup */
+
+#game-board {
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+
+#playAgain {
+  text-align: center;
+}
+
+
+#playAgain p {
+  margin: 0 auto;
+  color: #5fe883;
+  font-size: 2em;
+}
+
+/* cards */
+
+.flipContainer { 
+  position: relative;
+  border: 1vh solid transparent;
+  min-height: 50px;
+  min-width: 50px;
+  perspective: 1000px; 
+}
+
+.cards {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid 3px #000000;
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+}
+
+.cards div {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.cards .front {
+  background-color: #ffffff;
+  text-align: center;
+   display: table;
+}
+
+.cards .back {
+  transform: rotateY(180deg);
+  background-color: #D3D3D3;
+  text-align: center;
+  display: table;
+}
+
+.cards.matched .back {
+   background-color: #5fe883;
+}
+
+.cards .back .glyphicon {
+  display: table-cell;  
+  vertical-align: middle;
+  font-size: 8vh;
+}
+
+.cards .front .glyphicon {
+  display: table-cell;  
+  vertical-align: middle;
+  font-size: 8vh;
+}
+
+.cards.flip {
+  transform: rotateY(180deg);
+}
+
+.rows1 {
+  height: 100%;
+}
+
+.rows2 { 
+  height: 50%;
+}
+
+.rows3 { 
+  height: 33%;
+}
+
+.rows4 {
+  height: 25%;
+}
+

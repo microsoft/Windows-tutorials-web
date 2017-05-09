@@ -1,0 +1,41 @@
+{
+  "name": "memorygameapisample",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Microsoft Corporation",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Microsoft/Windows-tutorials-web/"
+  },
+  "bugs": "http://github.com/Microsoft/Windows-tutorials-web/issues",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.0.0",
+    "swaggerize-express": "^4.0.0",
+    "swaggerize-ui": "^1.0.1",
+    "swagmock": "~0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^2",
+    "istanbul": "~0.4.3",
+    "is-my-json-valid": "^2.13.1",
+    "js-yaml": "^3.2.6",
+    "supertest": "^1.2.0",
+    "swagger-parser": "^3.4.1",
+    "tape": "^4"
+  },
+  "scripts": {
+    "test": "tape 'tests/**/*.js'",
+    "cover": "istanbul cover tape -- 'tests/**/*.js'",
+    "lint": "eslint .",
+    "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.json'"
+  },
+  "generator-swaggerize": {
+    "version": "3.1.0"
+  },
+  "main": "./server"
+}

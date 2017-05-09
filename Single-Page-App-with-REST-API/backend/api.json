@@ -1,0 +1,117 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "v1",
+        "title": "Memory Game API",
+        "description": "A simple single-instance representation of memory (Concentration)."
+    },
+    "schemes":["http","https"],
+    "consumes":["application/json"],
+    "produces":["application/json"],
+    "paths": {
+        "/game": {
+            "get": {
+                "tags":["Game"],
+                "summary":"Retrieves the current state of the memory game board.",
+                "operationId": "game_get",
+                "produces": [
+                    "application/json",
+                    "text/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Card"
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "/guess": {
+            "put": {
+                "tags":["Game"],
+                "summary":"Specifies a card to reveal and checks for a match to the previous.",
+                "operationId": "game_guess",
+                "produces": [
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "card",
+                        "in": "query",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/CardGuess"
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "/new": {
+            "post": {
+                "tags":["Game"],
+                "summary":"Initializes a new game board of the specified size (# of matches).",
+                "operationId": "game_new",
+                "produces": [
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "deprecated": false
+            }
+        }
+    },
+    "definitions": {
+        "Card": {
+            "type": "object",
+            "properties": {
+                "cleared": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "CardGuess": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "value": {
+                    "format": "int32",
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
