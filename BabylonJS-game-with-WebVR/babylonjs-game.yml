@@ -1,0 +1,10 @@
+### YamlMime:Sample
+sample:
+- name: WebVR support in a 3D Babylon.js game
+  description: An app that shows how to add WebVR support to an existing 3D Babylon.js game so that the game can be viewed with a VR headset.
+  generateZip: true
+  author: GrantMeStrength
+  languages:
+  - javascript
+  technologies:
+  - windows
