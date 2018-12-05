@@ -1,3 +1,13 @@
+---
+topic: sample
+languages:
+- javascript
+products:
+- windows
+statusNotificationTargets:
+- codefirst
+---
+
 # Get Started Tutorial: A single-page web app + REST API - Sample Code
 
 This is the complete sample code for the [Get Started Tutorial: A single-page web app + REST API](https://docs.microsoft.com/en-us/windows/uwp/get-started/get-started-tutorial-fullstack-web-app) on [Windows Dev Center](https://developer.microsoft.com/en-us/windows).
