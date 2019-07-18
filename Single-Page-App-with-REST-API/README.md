@@ -1,11 +1,13 @@
 ---
-topic: sample
+page_type: sample
 languages:
 - javascript
 products:
 - windows
 statusNotificationTargets:
-- codefirst
+- codefirst@microsoft.com
+urlFragment: get-started-single-page-app
+description: "This is the complete sample code for the tutorial on getting started with single page web apps and REST API."
 ---
 
 # Get Started Tutorial: A single-page web app + REST API - Sample Code
