@@ -1,11 +1,13 @@
 ---
-topic: sample
+page_type: sample
 languages:
 - javascript
 products:
 - windows
 statusNotificationTargets:
-- codefirst
+- codefirst@microsoft.com
+urlFragment: get-started-webvr-babylon
+description: "This is the complete sample code for the getting started tutorial on WebVR and Babylon.js."
 ---
 
 # Get Started Tutorial: Adding WebVR support to a 3D Babylon.js game
