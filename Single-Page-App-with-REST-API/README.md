@@ -12,7 +12,7 @@ description: "This is the complete sample code for the tutorial on getting start
 
 # Get Started Tutorial: A single-page web app + REST API - Sample Code
 
-This is the complete sample code for the [Get Started Tutorial: A single-page web app + REST API](https://docs.microsoft.com/en-us/windows/uwp/get-started/get-started-tutorial-fullstack-web-app) on [Windows Dev Center](https://developer.microsoft.com/en-us/windows).
+This is the complete sample code for the [Get Started Tutorial: A single-page web app + REST API](https://docs.microsoft.com/windows/uwp/get-started/get-started-tutorial-fullstack-web-app) on [Windows Dev Center](https://developer.microsoft.com/windows).
 
 This 2-part sample uses popular fullstack web technologies to run a simple *Memory* game that both works in the browser and as a Hosted Web App for the Microsoft Store.
 
